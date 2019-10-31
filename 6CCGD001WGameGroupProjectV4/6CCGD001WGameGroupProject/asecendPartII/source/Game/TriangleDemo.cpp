@@ -110,11 +110,13 @@ namespace Rendering
 	
 		BasicEffectVertex vertices[] =
 		{//Vertices for a 3D gem
-			BasicEffectVertex(XMFLOAT4(-1.25f, 0.0f, 1.0f, 1.0f), XMFLOAT4(1.0f, 0.0f,0.0f,1.0f)),//V0
-			BasicEffectVertex(XMFLOAT4(1.25f, 0.0f, 1.0f, 1.0f), XMFLOAT4(1.0f, 0.0f, 0.0f, 1.0f)),//V1 
-			BasicEffectVertex(XMFLOAT4(0.0f, 0.0f, -1.5f, 1.0f), XMFLOAT4(1.0f, 1.0f, 0.0f, 1.0f)),//V2 
-			BasicEffectVertex(XMFLOAT4(0.0f, 2.0f, 0.0f, 1.0f), XMFLOAT4(0.0f, 0.0f, 1.0f, 1.0f)),//V3
-			BasicEffectVertex(XMFLOAT4(0.0f, -2.0f, 0.0f, 1.0f), XMFLOAT4(0.0f, 0.0f, 1.0f, 1.0f)),//V4
+			//BasicEffectVertex(XMFLOAT4(0.0f, 0.0f, 1.0f, 1.0f), XMFLOAT4(1.0f, 0.0f,0.0f,1.0f)),//V0
+			//BasicEffectVertex(XMFLOAT4(1.25f, 0.0f, 1.0f, 1.0f), XMFLOAT4(1.0f, 0.0f, 0.0f, 1.0f)),//V1 
+			//BasicEffectVertex(XMFLOAT4(0.0f, 0.0f, -1.5f, 1.0f), XMFLOAT4(1.0f, 1.0f, 0.0f, 1.0f)),//V2 
+			BasicEffectVertex(XMFLOAT4(-3.0f, 0.0f, -3.0f, 1.0f), XMFLOAT4(0.0f, 0.6f, 0.0f, 1.0f)),//V0
+			BasicEffectVertex(XMFLOAT4(3.0f, 0.0f, -3.0f, 1.0f), XMFLOAT4(0.0f, 0.6f, 0.0f, 1.0f)),//V1
+			BasicEffectVertex(XMFLOAT4(-3.0f, 0.0f, 3.0f, 1.0f), XMFLOAT4(0.0f, 0.6f, 0.0f, 1.0f)),//V2
+			BasicEffectVertex(XMFLOAT4(3.0f, 0.0f, 3.0f, 1.0f), XMFLOAT4(0.0f, 0.6f, 0.0f, 1.0f)),//V3
 		};
 
 		D3D11_BUFFER_DESC vertexBufferDesc;
@@ -134,12 +136,8 @@ namespace Rendering
 
 		UINT indices[] =
 		{	
-			0, 1, 3,
-			0, 3, 2,
+			0, 1, 2,
 			1, 2, 3,
-			0, 4, 1,
-			0, 2, 4,
-			1, 4, 2,
 		};
 		
 		D3D11_BUFFER_DESC indexBufferDesc;
@@ -161,8 +159,8 @@ namespace Rendering
 
 	void TriangleDemo::Update(const GameTime& gameTime)
 	{
-		mAngle += XM_PI * static_cast<float>(gameTime.ElapsedGameTime());
-		XMStoreFloat4x4(&mWorldMatrix, XMMatrixRotationY(mAngle));
+		/*mAngle += XM_PI * static_cast<float>(gameTime.ElapsedGameTime());
+		XMStoreFloat4x4(&mWorldMatrix, XMMatrixRotationY(mAngle));*/
 	}
 
     void TriangleDemo::Draw(const GameTime& gameTime)
@@ -184,7 +182,7 @@ namespace Rendering
 		XMMATRIX wvp = worldMatrix * mCamera->ViewMatrix() * mCamera->ProjectionMatrix();
 		mWvpVariable->SetMatrix(reinterpret_cast<const float*>(&wvp));
 		mPass->Apply(0, direct3DDeviceContext);
-		//direct3DDeviceContext->DrawIndexed(18, 0, 0);
+		direct3DDeviceContext->DrawIndexed(18, 0, 0);
 
      
     }

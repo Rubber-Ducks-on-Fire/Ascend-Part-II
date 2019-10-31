@@ -39,6 +39,8 @@ namespace Rendering
         ID3DX11EffectPass* mPass;
         ID3DX11EffectMatrixVariable* mWvpVariable;
 
+
+
         ID3D11InputLayout* mInputLayout;		
         ID3D11Buffer* mVertexBuffer;
 		ID3D11Buffer* mIndexBuffer;

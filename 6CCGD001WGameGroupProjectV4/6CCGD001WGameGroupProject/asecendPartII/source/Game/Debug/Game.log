@@ -1,13 +1,15 @@
-﻿  A subdirectory or file G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\Debug\Content already exists.
-  G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Effects\BasicEffect.cso
-  G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Effects\BasicEffect.fx
-  G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Effects\TextureMapping.cso
-  G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Effects\TextureMapping.fx
-  G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Models\bench.3ds
-  G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Textures\bench.jpg
-  6 File(s) copied
-  TriangleDemo.cpp
+﻿  A subdirectory or file G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\Debug\Content already exists.
+  G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Effects\BasicEffect.cso
+  G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Effects\BasicEffect.fx
+  G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Effects\TextureMapping.cso
+  G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Effects\TextureMapping.fx
+  G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Models\bench.3ds
+  G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Textures\bench.jpg
+  G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\..\content\Textures\grass.jpg
+  7 File(s) copied
+  RenderingGame.cpp
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Game.vcxproj -> G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\Debug\Game.exe
-  G:\Game Group Project III\6CCGD001WGameGroupProject\asecendPartII\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
+G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\source\Game\RenderingGame.cpp(7,10): warning C4067:  unexpected tokens following preprocessor directive - expected a newline
+  Game.vcxproj -> G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\Debug\Game.exe
+  G:\Game Group Project III\Ascend-Part-II\6CCGD001WGameGroupProjectV4\6CCGD001WGameGroupProject\asecendPartII\build\..\..\external\assimp\bin\assimp_release-dll_win32\assimp.dll
           1 file(s) copied.

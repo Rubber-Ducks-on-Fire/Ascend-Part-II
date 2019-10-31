@@ -50,7 +50,7 @@ namespace Rendering
 		mServices.AddService(Mouse::TypeIdClass(), mMouse);
 
 		mModel = new ModelFromFile(*this, *mCamera, "Content\\Models\\bench.3ds");
-		mModel->SetPosition(-1.57f, -0.0f, -0.0f, 0.005f, 0.0f, 0.6f, 0.0f);
+		mModel->SetPosition(-1.57f, -0.0f, -0.0f, 0.005f, 0.0f, 0.4f, 0.0f);
 		mComponents.push_back(mModel);
 
 
